@@ -1,0 +1,940 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+    scroll-behavior: smooth;
+    
+
+
+}
+
+body{
+
+    
+    overflow-x: hidden;
+
+}
+
+
+
+
+
+
+/*1st section CSS */
+
+.container{
+   
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.container img{
+    width: 38%;
+    position: absolute;
+    bottom: 2px;
+    right:0;
+    
+}
+
+.logo{
+    position: absolute;
+    top:3%;
+    left: 10%;
+
+}
+
+.logo h1{
+    color: white;
+    font-family: 'Play', sans-serif;
+
+
+
+}
+
+.Hub{
+    border: 1px;
+    border-radius: 5px;
+    padding: 1px;
+    background-color:rgb(255, 123, 0);
+    color: black;
+    font-family: 'Play', sans-serif;
+  
+
+}
+
+
+
+
+nav{
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Syne', sans-serif;
+    color: white;
+ 
+    
+    
+    
+   
+}
+
+.menu {
+    
+    flex:1;
+    text-align:right;
+   
+    
+}
+
+
+
+.menu ul li{
+    
+    list-style: none;
+    display: inline-block;
+    padding: 8px 27px;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+ 
+    
+
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+    
+}
+
+
+.menu ul li::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background:rgb(255, 123, 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    float: right;
+    
+}
+
+.menu ul li:hover::after{
+    width:100%;
+
+}
+
+.Title{
+    position: absolute;
+    top:33%;
+    left:10%;
+
+}
+
+.Title h1{ 
+    color: rgb(255, 123, 0);
+    font-family: 'Play', sans-serif;
+    margin-bottom: 10px;
+    font-size: 27px;
+
+}
+
+.Title h2{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 80px;
+
+}
+
+
+
+.Title h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+     /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, start),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 123, 0); }
+  }
+
+
+
+
+.Title p{
+    position: absolute;
+    text-align: justify;
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+
+}
+
+
+
+.button{
+    position: absolute;
+    left:10%;
+    top:67%;
+
+}
+
+.btn-white {
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #fff;
+    min-height: 50px;
+    padding: 0 15px;
+    font-size: 15px;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+
+    
+  }
+
+  
+  
+  
+  .btn-white::before {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 45px;
+    height: 1px;
+    margin-right: 20px;
+
+  }
+  
+  .btn-white::after {
+    content: "";
+    background-color:rgb(255, 123, 0);;
+    display: block;
+    width: 0%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+  }
+  
+  .btn-white:hover {
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .btn-white:hover::after {
+    width: 100%;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+  }
+  
+  .btn-white:hover::before {
+    background-color: #ffffff;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+  }
+
+
+.links{
+    position: absolute;
+    top:34%;
+    bottom: 0;
+    left: 15px;
+    
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 61px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.links ul li {
+   
+    font-size: 20px;
+    transition: 0.4s;
+   
+}
+
+
+
+.links ul li:hover{
+    transform: scale(1.4);
+    
+}
+
+.container_mouse{
+    position: absolute;
+    bottom: 0px;
+    left: 48%;
+
+
+
+}
+
+
+.mouse-btn {
+    margin: 10px auto;
+    width: 30px;
+    height: 50px;
+    border: 2px solid rgb(255, 251, 251);
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  .mouse-scroll {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background:rgb(255, 123, 0);
+    border-radius: 50%;
+    margin: auto;
+    animation: scrolling13 1s linear infinite;
+  }
+  
+  @keyframes scrolling13 {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+  }
+
+/*section2*/
+
+.container2{
+    margin: auto;
+    width: 100%;
+    background-color:black;
+   
+
+}
+
+
+
+.about{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 9%;
+    align-items: center;
+    padding-top: 3%;
+    color: white;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+    text-decoration:underline 3px solid rgb(255, 123, 0);
+
+}
+
+
+
+.Content2{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap:8%;
+
+    
+
+}
+
+
+.Info {
+    margin: 0;
+    padding-right: 8%;
+    width:48%;
+    height: auto;
+    
+}
+
+
+
+
+.Info h1{ 
+   
+    color: white;
+    font-size: 20px;
+    font-family: 'Play', sans-serif;
+    
+}
+
+.Info P{
+    color: white;
+    font-size: 13px;
+    font-family: 'Play', sans-serif;
+    text-align: justify;
+    margin-top: 13px;
+    
+}
+
+
+.container3{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    margin-right:7% ;
+    height: 40%;
+    width: 20%;
+    padding-bottom: 2;
+    
+}
+
+h3{
+    color: #fff;
+    font-family: 'Play', sans-serif;;
+    font-size: 13PX;
+    
+}
+
+
+
+
+  .container4 {
+    
+    background-color: rgb(192, 192, 192);
+    width: 150%;
+    border-radius: 15px;
+    margin: 10px;
+    
+}
+
+
+.skill {
+    background-color: rgb(255, 123, 0);
+    color: white;
+    height: 20px;
+    text-align: right;
+    font-size: 18px;
+    border-radius: 15px;
+          
+}
+
+.coding {
+    width: 45%;
+}
+
+.designing {
+    width: 70%;
+}
+
+.editing {
+    width: 40%;
+
+}
+
+h2{
+   color: white;
+   padding: 0;
+   margin-bottom: 5%;
+   font-size: 20px;
+   font-family: 'Play', sans-serif;
+  
+}
+
+/*section3*/
+
+.container5{
+    
+    background-color: black;
+    width: 100%;
+    margin: auto;
+
+}
+
+.what{
+  
+    display: flex;
+    justify-content: start;
+    margin-left: 9%;
+    padding-top: 2%;
+    align-items: center; 
+    color: white;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+    text-decoration:underline 3px solid rgb(255, 123, 0);
+ 
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+  
+
+}
+
+.ido{
+    margin-top: 40px;
+    width: 310px;
+    height: 290px;
+    text-align: center;   
+    cursor: pointer;  
+    background-color: rgba(102, 101, 99, 0.103);
+    transition: 0.5s;
+
+    @media screen {
+        
+    }
+    
+}
+
+.ido h3{
+    margin-top:  20px;
+    justify-content: center;
+    font-size: 18px;
+     
+}
+
+.ido p{
+    
+    font-size: 13px;
+    color: #fff;
+    text-align:justify;
+    padding: 25px;
+ 
+    
+
+}
+
+.ido i{
+    margin-top: 40px;
+    color: rgb(255, 123, 0);
+    font-size: 40px;
+
+}
+
+.ido:hover{
+    box-shadow: 0 0 10px 5px rgb(255, 123, 0);
+    transform:scale(1.05);
+    border-radius: 16px;
+
+}
+
+/*section4*/
+
+.container6{
+    padding-top: 8%;
+    margin: auto;
+    width: 100vw;
+    background-color: black;
+    
+
+}
+
+.experience {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline rgb(255, 123, 0);
+
+
+}
+
+.expP {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.containerflex{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 40px;
+    
+
+
+}
+
+.box{
+    width: 480px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+
+
+}
+
+.box h2{
+    
+    font-size: 15px;
+    color: rgb(255, 123, 0);
+   
+}
+
+.box p{
+    text-align: justify;
+    font-size: 13px;
+    color: white;
+
+
+
+}
+
+/*sec7 footer */
+
+.footer {
+    margin: auto;
+    background-color:rgba(10, 10, 10, 0.986);
+    width: 100%;
+   
+
+
+
+}
+
+.container7{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+.container7 h2{
+
+    color: rgb(255, 250, 250);
+    margin: 3% 0 0 0;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+.container7 p {
+    color: rgb(253, 250, 250);
+    font-size: 12px;
+    width: 45%;
+    text-align: center;
+    margin: 9px 0 9px 0;
+
+}
+
+.container7 h3{
+    margin-bottom: 1%;
+
+}
+
+
+
+.footerlinks{
+    display: none;
+    margin-bottom: 1%;
+   
+   
+  
+
+}
+
+.footerfonts{
+    display: flex;
+    justify-content:center ;
+    gap: 23%;
+    font-size: 20px;
+    transition: 0.5s;
+
+
+}
+
+.footerfonts i{
+    transition: 0.5s;
+
+
+    
+}
+
+.footerfonts i:hover{
+    
+        transform: scale(1.4);
+        
+    }
+
+
+
+
+.b2 {
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(255, 123, 0);
+    color: rgb(255, 255, 255);
+    width: 35px;
+    height: 35x;
+    border: 1px solid rgb(255, 123, 0);
+    border-radius: 8px;
+    cursor: pointer;
+    animation: bounce_513 1s infinite;
+    margin-bottom: 1%;
+  }
+
+
+  
+  @keyframes bounce_513 {
+    0%,
+      100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+  
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+
+
+    .container5{
+        padding-top:20% ;
+
+
+    }
+
+
+
+
+    .ido{
+        width: 290px;
+        height: 270px;
+
+    }
+
+    .containerflex{
+        display: block;
+
+    }
+   
+    .box{
+        width: 300px;
+        height: 200px;
+        
+    }
+
+    .container img{
+        display: none;
+
+    }
+
+    .container6{
+        padding: 20% 0 30% 0;
+        margin:auto;
+        width: 100%;
+        background-color: black;
+
+    }
+
+    
+
+    .Content2 {
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 22px;
+
+
+    }
+
+    .containerflex{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+    }
+
+
+    
+
+    .Info {
+        padding-top: 20px;
+        width:90%;
+    }
+       
+    .container3{
+        width: 63%;
+        margin: 15% 40% 0% 0;
+        padding-bottom: 20%;
+        
+
+    }
+
+    .about{
+        padding-top: 20% ;
+
+
+    }
+
+    #pad-ido-bot{
+
+        margin-bottom: 20%;
+
+    }
+
+    .Title {
+      margin-right:20% ;
+
+    }
+    
+    .Title h1{ 
+        color: rgb(255, 123, 0);
+        font-family: 'Play', sans-serif;
+        margin-bottom: 10px;
+        font-size: 27px;
+    
+    }
+    
+    .Title h2{
+        color: white;
+        font-family: 'Play', sans-serif;
+        font-size: 35px;
+        
+    
+    }
+
+    .button{
+        position: absolute;
+        left:26%;
+        top:74% ;
+    
+    }
+    
+    .mouse-btn {
+        display: none;
+
+    }
+
+
+
+      .links{
+        display: none;
+
+      }
+
+      .menu ul li a{
+        display: none;
+
+      }
+       
+      .logo{
+        margin-top: 10%;
+
+      }
+
+      
+
+    
+
+
+      .container7{
+        padding: 2% 0 2% 0;
+        
+
+      }
+
+      .container7 p{
+
+            width: 80%;
+            text-align: center;
+      }
+
+      .container7 h3{
+        margin-bottom:5%;
+
+
+      }
+
+
+      .footerlinks{
+        display: block;
+        margin-bottom: 7%;
+
+      }
+
+      
+}
+
+
+
+
+      
+
+    
+
+      
+    
+
+    
+
+    
+
