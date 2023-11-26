@@ -1,0 +1,17 @@
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.Form1.resources
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.Properties.Resources.resources
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.csproj.GenerateResource.cache
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.AssemblyInfoInputs.cache
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.AssemblyInfo.cs
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.csproj.CoreCompileInputs.cache
+D:\DSA code\COFFEESHOP\bin\Debug\net8.0-windows\COFFEESHOP.exe
+D:\DSA code\COFFEESHOP\bin\Debug\net8.0-windows\COFFEESHOP.deps.json
+D:\DSA code\COFFEESHOP\bin\Debug\net8.0-windows\COFFEESHOP.runtimeconfig.json
+D:\DSA code\COFFEESHOP\bin\Debug\net8.0-windows\COFFEESHOP.dll
+D:\DSA code\COFFEESHOP\bin\Debug\net8.0-windows\COFFEESHOP.pdb
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.dll
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\refint\COFFEESHOP.dll
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.pdb
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\COFFEESHOP.genruntimeconfig.cache
+D:\DSA code\COFFEESHOP\obj\Debug\net8.0-windows\ref\COFFEESHOP.dll
