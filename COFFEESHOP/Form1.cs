@@ -1,3 +1,5 @@
+using System.Xml;
+
 namespace COFFEESHOP
 {
     public partial class Form1 : Form
@@ -69,6 +71,18 @@ namespace COFFEESHOP
 
             }
 
+            int sum = 0;
+
+            for (int row = 0 ; row < dataGridView1.Rows.Count; row++)
+                {
+                sum = sum + Convert.ToInt32(dataGridView1.Rows[row].Cells[4].Value);
+
+                }
+                TotalDisplay.Text = sum.ToString();
+
+
+
+
         }
 
 
@@ -113,6 +127,44 @@ namespace COFFEESHOP
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UndoButton_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(item.Index);
+            }
+
+            int minus = 0;
+
+            for (int row = dataGridView1.Rows.Count - 1; row >= 0; row--)
+            {
+                int cellValue = 0;
+                if (dataGridView1.Rows[row].Cells[4].Value != null &&
+                    int.TryParse(dataGridView1.Rows[row].Cells[4].Value.ToString(), out cellValue))
+                {
+                    minus -= cellValue; // Subtract the cell value from 'minus'
+                }
+            }
+
+            TotalDisplay.Text = minus.ToString();
+
+        }
+
+        private void SaveButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TotalDisplay_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
